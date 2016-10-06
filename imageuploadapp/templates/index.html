@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ImageUpload WebApp</title>
+</head>
+<body style="background-color: #34495E;">
+<h1 style="color: #fff; text-align: center;">ImageUpload WebApp</h1>
+<form method="post" enctype="multipart/form-data" style="margin:0 auto;width:15%;text-align:left">
+{% csrf_token %}
+<label>Name</label>
+{{form.name}}
+<label>Image</label>
+{{form.image}}
+<input type="submit" value="upload image">
+</form>
+</body>
+</html>

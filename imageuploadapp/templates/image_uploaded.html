@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ImageUpload Webapp </title>
+</head>
+<body>
+{% for images in image %}
+<img src="{{images.image.url}}">
+<p>{{ images.name }}</p>
+{% endfor %}
+</body>
+</html>
